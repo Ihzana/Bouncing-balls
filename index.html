@@ -4,8 +4,8 @@
   <style>
     #container {
       position: relative;
-      width: 800px;
-      height: 800px;
+      width: 1000px;
+      height: 1000px;
       background-color: #31054f;
       border: 1px solid black;
     }
@@ -55,8 +55,8 @@
       container.appendChild(ball);
       balls.push(ball);
 
-      const speedX = (Math.random() - 0.75) * 10;
-      const speedY = (Math.random() - 0.75) * 10;
+      const speedX = (Math.random() - 1) * 10;
+      const speedY = (Math.random() - 1) * 10;
 
       ball.style.left = `${Math.random() * 350}px`;
       ball.style.top = `${Math.random() * 350}px`;
@@ -75,11 +75,11 @@
         y += speedY;
 
         if (x < 0 || x > rect.width - 50) {
-          speedX *= -1;
+          speedX *= -2;
         }
 
         if (y < 0 || y > rect.height - 50) {
-          speedY *= -1;
+          speedY *= -2;
         }
 
         ball.style.left = `${x}px`;
