@@ -1,11 +1,11 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
 <head>
   <style>
     #container {
       position: relative;
-      width: 1500px;
-      height: 2000px;
+      width: 800px;
+      height: 800px;
       background-color: #31054f;
       border: 1px solid black;
     }
@@ -75,11 +75,11 @@
         y += speedY;
 
         if (x < 0 || x > rect.width - 50) {
-          speedX *= -2;
+          speedX *= -1;
         }
 
         if (y < 0 || y > rect.height - 50) {
-          speedY *= -2;
+          speedY *= -1;
         }
 
         ball.style.left = `${x}px`;
